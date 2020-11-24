@@ -72,12 +72,17 @@ export default {
   async created () {
     this.userInfo = await this.getUserInfoMethod()
     this.user = this.userInfo.user
+<<<<<<< HEAD
     if(this.userInfo.branch != null)
     {
     this.branch = this.userInfo.branch
     this.committee = this.userInfo.branch.committee
     }
     
+=======
+    this.branch = this.userInfo.branch
+    this.committee = this.userInfo.branch.committee
+>>>>>>> 29e1a3fa1e06eb671bf8e563da82549b692bbbd4
     console.log('this.userInfo-->' + JSON.stringify(this.userInfo))
     // this.userInfo.tel = ''
   },

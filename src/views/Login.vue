@@ -1,7 +1,11 @@
 <template>
   <div class="login">
     <van-nav-bar
+<<<<<<< HEAD
       title="登录"
+=======
+      title="登陆"
+>>>>>>> 29e1a3fa1e06eb671bf8e563da82549b692bbbd4
       left-arrow
       @click-left="$router.back()"
     />

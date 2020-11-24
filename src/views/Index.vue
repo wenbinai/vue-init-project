@@ -11,8 +11,13 @@
 
         >
           <template #footer>
+<<<<<<< HEAD
             <van-button v-if="item.join" color="deepskyblue" disabled>已签到</van-button>
             <van-button @click="sign(item.notice.id)" color="deepskyblue" v-else>签到</van-button>
+=======
+            <van-button v-if="item.join" disabled>已签到</van-button>
+            <van-button @click="sign(item.notice.id)" v-else>签到</van-button>
+>>>>>>> 29e1a3fa1e06eb671bf8e563da82549b692bbbd4
           </template>
         </van-card>
         <van-popup v-model="showActivity">
@@ -38,8 +43,13 @@
 
         >
           <template #footer>
+<<<<<<< HEAD
             <van-button size="mini" v-if="item.join" color="deepskyblue" disabled>已签到</van-button>
             <van-button size="mini" v-else color="deepskyblue" disabled>未签到</van-button>
+=======
+            <van-button size="mini" v-if="item.join" disabled>已签到</van-button>
+            <van-button size="mini" v-else disabled>未签到</van-button>
+>>>>>>> 29e1a3fa1e06eb671bf8e563da82549b692bbbd4
           </template>
         </van-card>
       </van-tab>
@@ -86,17 +96,28 @@ export default {
       // setTimeout(() => this.$router.push('/login'), 3000)
     }
     const resp = await getNotice()
+<<<<<<< HEAD
     // console.log(resp)
     // console.log('resp.data-->', resp.data)
+=======
+    console.log(resp)
+    console.log('resp.data-->', resp.data)
+>>>>>>> 29e1a3fa1e06eb671bf8e563da82549b692bbbd4
     this.notices = resp.data.future
     // this.notice = resp.data.future.notice
     // this.future = resp.data.future
     // this.out = resp.data.out
     this.futureNotices = resp.data.future
     this.outNotices = resp.data.past
+<<<<<<< HEAD
     // console.log('fu notice-->', this.futureNotices)
     // console.log('out notice-->', this.outNotices)
     // console.log('notices -->' + JSON.stringify(this.notices))
+=======
+    console.log('fu notice-->', this.futureNotices)
+    console.log('out notice-->', this.outNotices)
+    console.log('notices -->' + JSON.stringify(this.notices))
+>>>>>>> 29e1a3fa1e06eb671bf8e563da82549b692bbbd4
     if (this.notices.length !== 0) {
       this.isShow = true
     } else {
@@ -185,18 +206,26 @@ export default {
 <style scoped>
 .van-card__title {
   font-weight: bold;
+<<<<<<< HEAD
   font-size: 15px;
   margin: 5px;
+=======
+  /*font-size: 18px;*/
+>>>>>>> 29e1a3fa1e06eb671bf8e563da82549b692bbbd4
 }
 
 .van-card__desc {
   height: 60px !important;
   font-size: 14px;
   color: blue;
+<<<<<<< HEAD
   /* overflow: visible; */
    display: block;
    width: 100%;
    overflow-wrap:normal ;
+=======
+  background-color: black;
+>>>>>>> 29e1a3fa1e06eb671bf8e563da82549b692bbbd4
 }
 
 .van-card__desc {
@@ -206,10 +235,18 @@ export default {
 }
 
 .van-ellipsis {
+<<<<<<< HEAD
   white-space: pre-wrap;
+=======
+  white-space: nowrap;
+>>>>>>> 29e1a3fa1e06eb671bf8e563da82549b692bbbd4
 }
 
 .van-card__desc, .van-card__title {
   word-wrap: break-word;
 }
+<<<<<<< HEAD
+=======
+
+>>>>>>> 29e1a3fa1e06eb671bf8e563da82549b692bbbd4
 </style>

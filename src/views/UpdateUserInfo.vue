@@ -117,8 +117,11 @@ export default {
     this.userInfo.name = user.name
     this.userInfo.state = user.state
     this.userInfo.nio =  user.no
+<<<<<<< HEAD
     this.userInfo.company = user.company
     this.userInfo.idCard = user.idCard
+=======
+>>>>>>> 29e1a3fa1e06eb671bf8e563da82549b692bbbd4
   },
   methods: {
     onFailed(error) {

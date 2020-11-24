@@ -14,8 +14,13 @@ export default {
   },
   watch: {
     exception (val) {
+<<<<<<< HEAD
       // console.log('alertdialog 的 val' + val)
       // console.log('弹出弹窗开始')
+=======
+      console.log('alertdialog 的 val' + val)
+      console.log('弹出弹窗开始')
+>>>>>>> 29e1a3fa1e06eb671bf8e563da82549b692bbbd4
       this.exception.message = val
       if (this.exception.message !== '') {
         alert(`${this.exception.message}`)

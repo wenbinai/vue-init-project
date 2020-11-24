@@ -29,7 +29,10 @@ myAxios.interceptors.response.use(
         case 401:
           console.log(resp.data.message)
           Vue.prototype.$msg.fail(resp.data.message)
+<<<<<<< HEAD
           alert('用户名或密码错误')
+=======
+>>>>>>> 29e1a3fa1e06eb671bf8e563da82549b692bbbd4
           break
           // store.commit(GET_EXCEPTION, { message: resp.data.message })
         case 404:

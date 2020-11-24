@@ -21,9 +21,15 @@ const myMutations = {
     console.log('第四步')
     state.token = data
     localStorage.setItem('token', state.token)
+<<<<<<< HEAD
     // console.log('存储token完毕')
     // console.log('state.token -->' + state.token)
     // console.log(state.token)
+=======
+    console.log('存储token完毕')
+    console.log('state.token -->' + state.token)
+    console.log(state.token)
+>>>>>>> 29e1a3fa1e06eb671bf8e563da82549b692bbbd4
   },
   [GET_EXCEPTION](state, data) {
     state.exception = data

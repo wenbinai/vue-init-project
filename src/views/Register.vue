@@ -67,13 +67,22 @@
         v-model="isliuru"
       >
         <van-picker :columns="liuruArea" title="务工地区" show-toolbar @confirm="onConfirmR"
+<<<<<<< HEAD
                     @cancel="onCancelR" style="width: 90%"></van-picker>
+=======
+                    @cancel="onCancelR" style="width: 80%"></van-picker>
+>>>>>>> 29e1a3fa1e06eb671bf8e563da82549b692bbbd4
       </van-popup>
 
       <van-popup
         v-model="isliuchu"
+<<<<<<< HEAD
       >4
         <van-area :area-list="areaList" title="务工地区"  @confirm="onConfirmC" @cancel="onCancelC"></van-area>
+=======
+      >
+        <van-area :area-list="areaList" title="务工地区" @confirm="onConfirmC" @cancel="onCancelC"></van-area>
+>>>>>>> 29e1a3fa1e06eb671bf8e563da82549b692bbbd4
       </van-popup>
 
       <van-popup
@@ -452,8 +461,13 @@ export default {
     //   picker.setColumnValues(1, cities[values[0]])
     // },
     onConfirmD(e, index) {
+<<<<<<< HEAD
       // console.log('党委党工部值-->', e)
       // console.log('索引-->', index)
+=======
+      console.log('党委党工部值-->', e)
+      console.log('索引-->', index)
+>>>>>>> 29e1a3fa1e06eb671bf8e563da82549b692bbbd4
       this.isOpen = false
       this.user.branchId = index[1]
       this.user.branchName = e[0] + '-' + e[1]
